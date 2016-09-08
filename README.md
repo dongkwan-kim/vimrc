@@ -1,6 +1,4 @@
-# The Ultimate vimrc
-
-Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
+# The Ultimate vimrc of my version(@todoaskit)
 
 There are two versions:
 
@@ -12,7 +10,7 @@ I would of course recommend using the awesome version.c
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
-	git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone https://github.com/todoaskit/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 I also recommend using [Source Code Pro font from Adobe](http://store1.adobe.com/cfusion/store/html/index.cfm?event=displayFontPackage&code=1960) (it's free and awesome font for writing and programming). The Awesome vimrc is already setup to try to use it
@@ -22,26 +20,8 @@ The basic version is basically just one file and no plugins. You can check out [
 
 This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
 
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone git://github.com/todoaskit/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
-
-
-## How to install on Windows?
-
-Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
-
-
-## How to install on Linux
-
-If you have vim aliased as `vi` instead of `vim`, make sure to either alias it: `alias vi=vim`. Otherwise, `apt-get install vim`
-
-## How to update to latest version?
-
-Simply just do a git rebase!
-
-    cd ~/.vim_runtime
-    git pull --rebase
-
 
 ## Some screenshots
 
@@ -53,9 +33,6 @@ Opening recently opened files [mru.vim](https://github.com/vim-scripts/mru.vim):
 
 [NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
 ![Screenshot 3](http://files1.wedoist.com/b1509d7ed9e9f357e8d04797f9fad67b/as/screenshot3.png)
-
-This vimrc even works on Windows!
-![Screenshot 4](http://files1.wedoist.com/4e85163d97b81422240c822c82022f2f/as/screenshot_4.png)
 
 Distraction free mode using [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2):
 ![Screenshot 5](https://d2dq6e731uoz0t.cloudfront.net/a5182977c3d6c2a6cd3f9e97398ca8ca/as/zen_mode.jpg)
@@ -81,14 +58,13 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [goyo.vim](https://github.com/junegunn/goyo.vim) and [vim-zenroom2](https://github.com/amix/vim-zenroom2): 
 Remove all clutter and focus only on the essential. Similar to iA Writer or Write Room [Read more here](http://amix.dk/blog/post/19744)
 * [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.  Use `gcc` to comment out a line (takes a count), `gc` to comment out the target of a motion. `gcu` uncomments a set of adjacent commented lines.
-* [syntastic](https://github.com/scrooloose/syntastic): Syntax checking hacks for vim
 * [vim-yankstack](https://github.com/maxbrunsfeld/vim-yankstack): Maintains a history of previous yanks, changes and deletes
 * [lightline.vim](https://github.com/itchyny/lightline.vim): A light and configurable statusline/tabline for Vim
 
 
 ## Included color schemes
 
-* [peaksea](https://github.com/vim-scripts/peaksea): My favorite!
+* [peaksea](https://github.com/vim-scripts/peaksea)
 * [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 * [vim-irblack](https://github.com/wgibbs/vim-irblack)
 * [mayansmoke](https://github.com/vim-scripts/mayansmoke)
@@ -308,7 +284,5 @@ Vimscript mappings:
     map <leader>p :cp<cr>
 
 ## How to uninstall
-Do following:
-* Remove `~/.vim_runtime`
-* Remove any lines that refernce `.vim_runtime` in your `~/.vimrc`
+`rm -rf ~/.vim_runtime`
 
